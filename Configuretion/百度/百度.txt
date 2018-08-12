@@ -1,0 +1,7 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Variables ***
+${搜索框xpath}       xpath = //input[@id="kw"]
+${baidu_url}      http://www.baidu.com    # 百度首页
+${百度一下按钮}         xpath = //input[@id="su"]

@@ -1,0 +1,10 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Keywords ***
+点击搜索
+    单击    ${百度一下按钮}
+
+输入搜索内容
+    [Arguments]    ${content}    # 搜索内容
+    Input Text    ${搜索框xpath}    ${content}
