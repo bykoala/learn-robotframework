@@ -5,3 +5,10 @@ Library           Selenium2Library
 ${搜索框xpath}       xpath = //input[@id="kw"]
 ${baidu_url}      http://www.baidu.com    # 百度首页
 ${百度一下按钮}         xpath = //input[@id="su"]
+${userName}       by.su@qq.com    # 登录用户名
+${password}       cptbtptpbcptftptp    # 登录密码
+${打开登录框}          xpath = //div[@id="u1"]/a[7]
+${打开通过用户名登录登录框}    xpath = //*[@id="TANGRAM__PSP_10__footerULoginBtn"]
+${userNameXpath}    xpath = //*[@id="TANGRAM__PSP_10__userName"]
+${pwdXpath}       xpath = //*[@id="TANGRAM__PSP_10__password"]
+${登录按钮}           xpath = //*[@id="TANGRAM__PSP_10__submit"]

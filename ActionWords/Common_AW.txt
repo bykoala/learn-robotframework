@@ -1,5 +1,11 @@
 *** Settings ***
 Library           Selenium2Library
+Resource          ../ActionWords/Common_AW.txt
+Resource          ../Configuretion/config.txt
+Library           Selenium2Library
+Resource          ../Configuretion/百度/百度.txt
+Resource          ../ActionWords/Common_AW.txt
+Resource          ../ActionWords/百度/百度.txt
 
 *** Keywords ***
 打开浏览器
