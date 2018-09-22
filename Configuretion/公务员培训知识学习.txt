@@ -1,0 +1,17 @@
+*** Variables ***
+${userName}       20110113
+${password}       8888
+${URL}            http://www.365.com
+${userNameId}     id=j_username
+${passwordId}     id=j_password1
+${loginButton}    id=lonin
+${进入班级}           xpath=//a[@class="cou-kscp"]
+${关闭悬浮框}          xpath=//span[@onclick="clearInterval(interval);img1.style.visibility = 'hidden'"]
+${第二课}            xpath=//div[@id="Tag_con_one_1"]/table[3]//input
+${第三课}            xpath=//div[@id="Tag_con_one_1"]/table[4]//input
+${第四课}            xpath=//div[@id="Tag_con_one_1"]/table[5]//input
+${第五课}            xpath=//div[@id="Tag_con_one_1"]/table[6]//input
+${第六课}            xpath=//div[@id="Tag_con_one_1"]/table[7]//input
+${第七课}            xpath=//div[@id="Tag_con_one_1"]/table[8]//input
+${第八课}            xpath=//div[@id="Tag_con_one_1"]/table[9]//input
+${加载视频播放插件}       xpath=//a[contains(text(),'install')]

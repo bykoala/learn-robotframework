@@ -3,7 +3,6 @@ Resource          ../ActionWords/Common_AW.txt
 Resource          ../Configuretion/config.txt
 Library           Selenium2Library
 Resource          ../Configuretion/百度/百度.txt
-Resource          ../ActionWords/Common_AW.txt
 Resource          ../ActionWords/百度/百度.txt
 
 *** Test Cases ***
@@ -17,7 +16,7 @@ Resource          ../ActionWords/百度/百度.txt
 
 搜索-有登录态
     [Setup]    Run Keyword    打开浏览器    ${baidu_url}
-    登录    ${userName}    ${password}
+    b登录    ${userName}    ${password}
     输入搜索内容    robot framework
     sleep    1
     点击搜索

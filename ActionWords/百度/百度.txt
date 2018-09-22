@@ -15,7 +15,7 @@ Resource          ../../ActionWords/百度/百度.txt
     [Arguments]    ${content}    # 搜索内容
     Input Text    ${搜索框xpath}    ${content}
 
-登录
+b登录
     [Arguments]    ${userName}    ${password}    # 用户名，密码
     单击    ${打开登录框}
     单击    ${打开通过用户名登录登录框}

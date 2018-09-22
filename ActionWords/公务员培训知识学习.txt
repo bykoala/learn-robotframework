@@ -1,0 +1,52 @@
+*** Settings ***
+Resource          ../ActionWords/Common_AW.txt
+Resource          ../ActionWords/公务员培训知识学习.txt
+Resource          ../Configuretion/公务员培训知识学习.txt
+Library           Selenium2Library
+
+*** Keywords ***
+登录
+    Wait Until Element Is Visible    ${userNameId}    15
+    Input Text    ${userNameId}    ${userName}
+    Wait Until Element Is Visible    ${passwordId}    15
+    Input Text    ${passwordId}    ${password}
+    sleep    15
+    单击    ${loginButton}
+
+进入班级
+    单击    ${进入班级}
+
+关闭悬浮框
+    单击    ${关闭悬浮框}
+
+学习第二课
+    单击    ${第二课}
+    Select Window    NEW
+    Log Location
+    Wait Until Element Is Visible    id=content    10
+    Select Frame    id=content
+    单击    ${加载视频播放插件}
+    sleep    5
+    ${message}    Confirm Action
+    Choose Ok On Next Confirmation
+    sleep    5
+    ${message}    Confirm Action
+    Choose Ok On Next Confirmation
+
+学习第三课
+    单击    ${第三课}
+
+学习第四课
+    单击    ${第四课}
+
+学习第五课
+    单击    ${第五课}
+
+学习第六课
+    单击    ${第六课}
+
+学习第七课
+    单击    ${第七课}
+
+学习第八课
+    单击    ${第八课}

@@ -1,0 +1,19 @@
+*** Settings ***
+Resource          ../ActionWords/Common_AW.txt
+Resource          ../ActionWords/公务员培训知识学习.txt
+Resource          ../Configuretion/公务员培训知识学习.txt
+Library           Selenium2Library
+
+*** Test Cases ***
+视频学习
+    打开浏览器    ${URL}
+    登录
+    关闭悬浮框
+    进入班级
+    学习第二课
+    Comment    学习第三课
+    Comment    学习第四课
+    Comment    学习第五课
+    Comment    学习第六课
+    Comment    学习第七课
+    Comment    学习第八课

@@ -10,7 +10,8 @@ Resource          ../ActionWords/百度/百度.txt
 *** Keywords ***
 打开浏览器
     [Arguments]    ${url}    # 需要打开的网址
-    Open Browser    ${url}    Chrome
+    Open Browser    ${url}    Chrome    ff_profile_dir=C:\\Users\\bysu\\AppData\\Local\\Google\\Chrome\\User Data\\Default
+    Maximize Browser Window
 
 关闭浏览器
     Close Browser
